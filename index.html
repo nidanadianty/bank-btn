@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank BTN KC Tasikmalaya — Rumah Impianmu, Dimulai dari Sini</title>
+    <meta name="description" content="Website resmi Bank BTN Kantor Cabang Kota Tasikmalaya. Temukan solusi KPR, tabungan, kredit UMKM, dan layanan digital terpercaya di Priangan Timur.">
+    <meta name="keywords" content="bank BTN Tasikmalaya, KPR Tasikmalaya, bank btn kantor cabang tasikmalaya, KPR subsidi, tabungan BTN">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bank BTN KC Tasikmalaya — Rumah Impianmu, Dimulai dari Sini">
+    <meta property="og:description" content="Solusi perumahan dan perbankan terpercaya untuk warga Priangan Timur.">
+    <meta property="og:type" content="website">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lenis Smooth Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BankOrCreditUnion",
+        "name": "Bank BTN KC Kota Tasikmalaya",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Sutisna Senjaya No. 101, Cikalang, Tawang",
+            "addressLocality": "Kota Tasikmalaya",
+            "addressRegion": "Jawa Barat",
+            "postalCode": "46112",
+            "addressCountry": "ID"
+        },
+        "telephone": "+62265334464",
+        "openingHours": "Mo-Fr 08:00-15:30",
+        "url": "https://www.btn.co.id"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ═══════ FLOATING DOCK NAVBAR ═══════ -->
+    <nav class="navbar-dock" id="navbar" aria-label="Navigasi utama">
+        <!-- Logo -->
+        <a href="#home" class="nav-brand">
+            <div class="nav-logo">
+                <img src="btn-logo.png" alt="Logo Bank BTN" class="btn-brand-logo">
+            </div>
+        </a>
+
+        <div class="nav-divider"></div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="nav-link active" data-section="home">
+                <i class="fas fa-home"></i>
+                <span>Beranda</span>
+            </a>
+            <a href="#products" class="nav-link" data-section="products">
+                <i class="fas fa-th-large"></i>
+                <span>Produk</span>
+            </a>
+            <a href="#location" class="nav-link" data-section="location">
+                <i class="fas fa-location-dot"></i>
+                <span>Lokasi</span>
+            </a>
+        </div>
+
+        <div class="nav-divider"></div>
+
+        <!-- Actions: Theme toggle + CTAs -->
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle tema gelap/terang" title="Ganti Tema">
+                <i class="fas fa-sun theme-icon-light"></i>
+                <i class="fas fa-moon theme-icon-dark"></i>
+            </button>
+            <a href="#contact" class="nav-cta-primary">
+                <span>Hubungi Kami</span>
+            </a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigasi">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <main>
+        <!-- ═══════ HERO SECTION ═══════ -->
+        <header id="home" class="hero">
+            <div class="hero-grid-bg"></div>
+
+            <div class="container-fluid-custom hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Bank BUMN Terpercaya Sejak 1897
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="line"><span class="line-inner">Rumah Impianmu,</span></span>
+                    <span class="line"><span class="line-inner"><span class="highlight">Dimulai dari Sini.</span></span></span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Bank BTN KC Tasikmalaya — hadir melayani warga Priangan Timur dengan solusi KPR, tabungan, dan layanan perbankan digital terpercaya.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#products" class="btn-primary-glow">
+                        Ajukan KPR Sekarang
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn-ghost">
+                        Konsultasi Gratis
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll</span>
+            </div>
+        </header>
+
+        <!-- ═══════ STATS STRIP ═══════ -->
+        <section class="section" aria-label="Statistik kepercayaan">
+            <div class="container-fluid-custom">
+                <div class="stats-strip reveal">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="1897">0</span>
+                        <span class="stat-label">Melayani Sejak</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5" data-suffix=" Juta+">0</span>
+                        <span class="stat-label">Nasabah KPR Tersalurkan</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="800" data-suffix="+">0</span>
+                        <span class="stat-label">Jaringan Kantor Nasional</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="24" data-suffix="/7">0</span>
+                        <span class="stat-label">Layanan Digital Nonstop</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ PRODUCTS — BENTO GRID ═══════ -->
+        <section id="products" class="section" aria-label="Produk dan Layanan">
+            <div class="container-fluid-custom">
+                <div class="section-header reveal">
+                    <span class="section-label">Produk & Layanan</span>
+                    <h2 class="section-title">Solusi Finansial <span class="highlight">Terlengkap</span></h2>
+                    <p class="section-desc">Dari KPR subsidi hingga layanan digital tercanggih — semua dirancang untuk membangun masa depan finansial Anda.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- Hero Card: KPR Subsidi -->
+                    <div class="bento-card bento-card--hero reveal">
+                        <div>
+                            <div class="bento-icon bento-icon--primary">
+                                <i class="fas fa-house-chimney"></i>
+                            </div>
+                            <h3>KPR BTN Subsidi (FLPP)</h3>
+                            <p>Wujudkan rumah pertama Anda dengan cicilan ringan dan bunga tetap melalui program subsidi pemerintah. Tersedia untuk Masyarakat Berpenghasilan Rendah (MBR) di seluruh area Tasikmalaya dan Priangan Timur.</p>
+                        </div>
+                        <a href="#" class="bento-link">
+                            Pelajari lebih lanjut <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Tall Card: BTN Mobile -->
+                    <div class="bento-card bento-card--tall reveal reveal-delay-1">
+                        <div>
+                            <div class="bento-icon bento-icon--accent">
+                                <i class="fas fa-mobile-screen-button"></i>
+                            </div>
+                            <h3>BTN Mobile</h3>
+                            <p>Kelola seluruh kebutuhan perbankan dalam satu genggaman. Transfer, bayar tagihan, dan pantau saldo — kapan saja, di mana saja.</p>
+                        </div>
+                        <a href="#" class="bento-link">
+                            Download Sekarang <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Standard Cards Row -->
+                    <div class="bento-card bento-card--standard reveal reveal-delay-2">
+                        <div>
+                            <div class="bento-icon bento-icon--secondary">
+                                <i class="fas fa-piggy-bank"></i>
+                            </div>
+                            <h3>Tabungan Batara</h3>
+                            <p>Produk tabungan utama dengan fasilitas ATM/Debit dan akses jaringan luas di seluruh Indonesia.</p>
+                        </div>
+                        <a href="#" class="bento-link">
+                            Selengkapnya <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="bento-card bento-card--standard reveal reveal-delay-3">
+                        <div>
+                            <div class="bento-icon bento-icon--success">
+                                <i class="fas fa-shop"></i>
+                            </div>
+                            <h3>KUR UMKM</h3>
+                            <p>Kredit Usaha Rakyat untuk dukung pelaku usaha kecil menengah di Kota Tasikmalaya dan sekitarnya.</p>
+                        </div>
+                        <a href="#" class="bento-link">
+                            Selengkapnya <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="bento-card bento-card--standard reveal reveal-delay-4">
+                        <div>
+                            <div class="bento-icon bento-icon--primary">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3>KPR Platinum</h3>
+                            <p>KPR non-subsidi untuk segmen menengah ke atas dengan plafon fleksibel dan tenor panjang.</p>
+                        </div>
+                        <a href="#" class="bento-link">
+                            Selengkapnya <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Wide Promo Card -->
+                    <div class="bento-card bento-card--wide reveal">
+                        <div>
+                            <span class="promo-badge">
+                                <i class="fas fa-bolt"></i> Promo Terbatas
+                            </span>
+                            <h3>Bunga KPR Mulai 2.99% — Khusus Wilayah Tasikmalaya</h3>
+                            <p>Nikmati promo spesial cicilan ringan untuk developer mitra pilihan. Berlaku untuk pengajuan baru hingga akhir tahun.</p>
+                        </div>
+                        <a href="#contact" class="bento-link" style="color: white;">
+                            Konsultasi Sekarang <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ ABOUT SECTION ═══════ -->
+        <section id="about" class="section" aria-label="Tentang Kami">
+            <div class="container-fluid-custom">
+                <div class="about-grid">
+                    <div class="about-visual reveal">
+                        <div class="about-img-wrapper">
+                            <img src="hero-bg.png" alt="Kantor Bank BTN KC Tasikmalaya">
+                        </div>
+                        <div class="about-float-card">
+                            <div class="icon"><i class="fas fa-award"></i></div>
+                            <div>
+                                <div class="stat">128<span class="stat-suffix"> Tahun</span></div>
+                                <div class="stat-text">Melayani Indonesia</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <div class="section-header reveal">
+                            <span class="section-label">Tentang Kami</span>
+                            <h2 class="section-title">Membangun <span class="highlight">Kebanggaan</span> Negeri</h2>
+                        </div>
+                        <div class="reveal reveal-delay-1">
+                            <p class="section-desc" style="margin-bottom: 1rem;">
+                                PT Bank Tabungan Negara (Persero) Tbk merupakan bank BUMN yang telah mengabdi untuk perbankan Indonesia sejak tahun 1897. Sebagai pelopor Kredit Pemilikan Rumah (KPR) pertama di Indonesia pada 1976, Bank BTN terus berkomitmen mewujudkan impian hunian jutaan keluarga.
+                            </p>
+                            <p class="section-desc" style="margin-bottom: 2rem;">
+                                Kantor Cabang Tasikmalaya hadir di Jl. Sutisna Senjaya No. 101 untuk melayani warga Priangan Timur dengan sepenuh hati — mengusung nilai-nilai <strong>AKHLAK</strong> sebagai fondasi pelayanan.
+                            </p>
+                        </div>
+
+                        <!-- AKHLAK Values -->
+                        <div class="akhlak-grid reveal reveal-delay-2">
+                            <div class="akhlak-item">
+                                <div class="akhlak-letter">A</div>
+                                <div class="akhlak-word">Amanah</div>
+                            </div>
+                            <div class="akhlak-item">
+                                <div class="akhlak-letter">K</div>
+                                <div class="akhlak-word">Kompeten</div>
+                            </div>
+                            <div class="akhlak-item">
+                                <div class="akhlak-letter">H</div>
+                                <div class="akhlak-word">Harmonis</div>
+                            </div>
+                            <div class="akhlak-item">
+                                <div class="akhlak-letter">L</div>
+                                <div class="akhlak-word">Loyal</div>
+                            </div>
+                            <div class="akhlak-item">
+                                <div class="akhlak-letter">A</div>
+                                <div class="akhlak-word">Adaptif</div>
+                            </div>
+                            <div class="akhlak-item">
+                                <div class="akhlak-letter">K</div>
+                                <div class="akhlak-word">Kolaboratif</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ LOCATION SECTION ═══════ -->
+        <section id="location" class="section" aria-label="Lokasi Kantor">
+            <div class="container-fluid-custom">
+                <div class="section-header reveal">
+                    <span class="section-label">Lokasi & Kontak</span>
+                    <h2 class="section-title">Temukan <span class="highlight">Kantor Kami</span></h2>
+                    <p class="section-desc">Kunjungi Kantor Cabang Bank BTN Tasikmalaya atau hubungi kami untuk konsultasi.</p>
+                </div>
+
+                <div class="location-grid">
+                    <div class="map-wrapper reveal">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.998!2d108.2205!3d-7.3281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f57000000000%3A0x0!2sJl.+Sutisna+Senjaya+No.101%2C+Cikalang%2C+Tawang%2C+Tasikmalaya!5e0!3m2!1sid!2sid!4v1"
+                            width="600" height="450"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            title="Lokasi Bank BTN KC Tasikmalaya"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <div class="location-cards reveal reveal-delay-1">
+                        <div class="location-card">
+                            <div class="lc-icon"><i class="fas fa-building-columns"></i></div>
+                            <div>
+                                <h4>Kantor Cabang Utama</h4>
+                                <p>Jl. Sutisna Senjaya No. 101, Cikalang, Tawang, Kota Tasikmalaya 46112</p>
+                            </div>
+                        </div>
+                        <div class="location-card">
+                            <div class="lc-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4>Telepon & Call Center</h4>
+                                <p>(0265) 334464 – 334465</p>
+                                <p style="color: var(--secondary); font-weight: 500;">Call Center 24 Jam: 1500 826</p>
+                            </div>
+                        </div>
+                        <div class="location-card">
+                            <div class="lc-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>Jam Operasional</h4>
+                                <div class="hours-grid">
+                                    <div class="hours-item"><strong>Senin–Jumat</strong><br>08.00 – 15.30 WIB</div>
+                                    <div class="hours-item"><strong>ATM & e-Channel</strong><br>24 Jam / 7 Hari</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-card">
+                            <div class="lc-icon"><i class="fas fa-map-pin"></i></div>
+                            <div>
+                                <h4>Kantor Kas Padayungan</h4>
+                                <p>Ruko No. 5, Jl. Perintis Kemerdekaan, Tugujaya, Tasikmalaya 46126</p>
+                            </div>
+                        </div>
+                        <div class="location-card">
+                            <div class="lc-icon"><i class="fas fa-map-pin"></i></div>
+                            <div>
+                                <h4>Kantor Kas Ciawi</h4>
+                                <p>Jl. Raya Sukamantri, Ciawi, Tasikmalaya 46156</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════ CONTACT FORM SECTION ═══════ -->
+        <section id="contact" class="section" aria-label="Formulir konsultasi">
+            <div class="container-fluid-custom">
+                <div class="contact-wrapper">
+                    <div class="contact-side reveal">
+                        <div class="section-header">
+                            <span class="section-label">Konsultasi</span>
+                            <h2 class="section-title">Ada Pertanyaan?</h2>
+                            <p class="section-desc">Tim kami siap membantu Anda menemukan solusi perbankan terbaik.</p>
+                        </div>
+
+                        <div class="contact-info-stack" style="margin-top: 2rem;">
+                            <div class="contact-item">
+                                <div class="ci-icon"><i class="fas fa-location-dot"></i></div>
+                                <div>
+                                    <h5>Alamat Kantor</h5>
+                                    <p>Jl. Sutisna Senjaya No. 101, Cikalang, Tawang, Kota Tasikmalaya 46112</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="ci-icon"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <h5>Telepon</h5>
+                                    <p>(0265) 334464 – 334465</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="ci-icon"><i class="fab fa-instagram"></i></div>
+                                <div>
+                                    <h5>Instagram</h5>
+                                    <p>@btnkctasikmalaya</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="ci-icon"><i class="fas fa-headset"></i></div>
+                                <div>
+                                    <h5>Call Center 24 Jam</h5>
+                                    <p>1500 826</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form reveal reveal-delay-1">
+                        <form id="contactForm" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nama">Nama Lengkap *</label>
+                                    <input type="text" id="nama" class="form-input" placeholder="Contoh: Budi Santoso" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telepon">Nomor WhatsApp *</label>
+                                    <input type="tel" id="telepon" class="form-input" placeholder="0812xxxxxxxx" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Alamat Email</label>
+                                <input type="email" id="email" class="form-input" placeholder="email@contoh.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="topik">Topik Konsultasi *</label>
+                                <select id="topik" class="form-select" required>
+                                    <option value="" disabled selected>Pilih topik konsultasi</option>
+                                    <option value="kpr">KPR (Kredit Pemilikan Rumah)</option>
+                                    <option value="tabungan">Tabungan</option>
+                                    <option value="kredit">Kredit Usaha / KUR</option>
+                                    <option value="digital">Layanan Digital</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="pesan">Pesan</label>
+                                <textarea id="pesan" class="form-textarea" rows="4" maxlength="500" placeholder="Ceritakan kebutuhan perbankan Anda..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit" id="submitBtn">
+                                <i class="fas fa-paper-plane"></i>
+                                Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container-fluid-custom">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                <div class="nav-logo">
+                        <img src="btn-logo.png" alt="Logo Bank BTN" class="btn-footer-logo">
+                </div>
+                <p class="footer-brand-desc">Melayani negeri, membangun rumah impian keluarga Indonesia dengan layanan perbankan terpercaya sejak dahulu.</p>
+            </div>
+                <div class="footer-col">
+                    <h5>Produk</h5>
+                    <ul>
+                        <li><a href="#">KPR Subsidi</a></li>
+                        <li><a href="#">KPR Platinum</a></li>
+                        <li><a href="#">Tabungan Batara</a></li>
+                        <li><a href="#">KUR UMKM</a></li>
+                        <li><a href="#">Deposito</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Layanan</h5>
+                    <ul>
+                        <li><a href="#">BTN Mobile</a></li>
+                        <li><a href="#">Internet Banking</a></li>
+                        <li><a href="#">ATM & CDM</a></li>
+                        <li><a href="#">Layanan Prioritas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Perusahaan</h5>
+                    <ul>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="https://www.btn.co.id" target="_blank" rel="noopener">btn.co.id</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 PT Bank Tabungan Negara (Persero) Tbk. Terdaftar dan diawasi oleh Otoritas Jasa Keuangan (OJK).</p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/btnkctasikmalaya/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.btn.co.id" target="_blank" rel="noopener" aria-label="Website BTN">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                    <a href="tel:1500826" aria-label="Call Center">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
