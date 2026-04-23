@@ -1,12 +1,12 @@
 /**
- * Bank BTN KC Tasikmalaya — Vanilla JS
- * Lenis Smooth Scroll · Theme Toggle · Scroll Reveal · Counter · Nav Spy · Form · Parallax
+ * Kode Bank BTN KC Tasikmalaya
+ * Fitur: Scroll Alus · Ganti Tema · Animasi Muncul · Angka Jalan · Form Kontak
  */
 
 document.addEventListener('DOMContentLoaded', () => {
 
     // ═══════════════════════════════════
-    // 0. LENIS SMOOTH SCROLL (Inertia Scroll)
+    // 0. Pake Lenis biar scrollnya alus
     // ═══════════════════════════════════
     const lenis = new Lenis({
         duration: 1.2,
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     requestAnimationFrame(raf);
 
-    // Integrate Lenis with Anchor Links
+    // Ini biar pas nge-klik menu, pindahnya alus banget
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', (e) => {
             e.preventDefault();
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ═══════════════════════════════════
-    // 1. THEME TOGGLE (Dark / Light)
+    // 1. Tombol buat ganti tema gelap/terang
     // ═══════════════════════════════════
     const themeToggle = document.getElementById('themeToggle');
     const html = document.documentElement;
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ═══════════════════════════════════
-    // 2. SCROLL REVEAL (Intersection Observer)
+    // 2. Animasi pas discroll biar muncul satu-satu
     // ═══════════════════════════════════
     const revealElements = document.querySelectorAll('.reveal');
 
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => revealObserver.observe(el));
 
     // ═══════════════════════════════════
-    // 3. COUNTER ANIMATION (easeOutExpo)
+    // 3. Animasi angka jalan (biar keren)
     // ═══════════════════════════════════
     function animateCounter(el) {
         const target = parseInt(el.getAttribute('data-target'));
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ═══════════════════════════════════
-    // 4. ACTIVE NAV LINK (scroll spy)
+    // 4. Deteksi menu yang lagi aktif pas discroll
     // ═══════════════════════════════════
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('.nav-link[data-section]');
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateActiveNav();
 
     // ═══════════════════════════════════
-    // 6. MOBILE NAV TOGGLE
+    // 6. Tombol buka tutup menu di HP
     // ═══════════════════════════════════
     const navToggle = document.getElementById('navToggle');
     const navLinksContainer = document.getElementById('navLinks');
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ═══════════════════════════════════
-    // 7. CONTACT FORM HANDLING
+    // 7. Pengaturan buat form kontak
     // ═══════════════════════════════════
     const contactForm = document.getElementById('contactForm');
     const submitBtn = document.getElementById('submitBtn');
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ═══════════════════════════════════
-    // 8. HERO MOUSE PARALLAX (Desktop)
+    // 8. Efek parallax pas mouse gerak (buat Desktop aja)
     // ═══════════════════════════════════
     const hero = document.querySelector('.hero');
     const heroContent = document.querySelector('.hero-content');
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ═══════════════════════════════════
-    // 9. HIDE SCROLL INDICATOR ON SCROLL
+    // 9. Ngilangin tulisan 'scroll' kalo udah turun
     // ═══════════════════════════════════
     const scrollIndicator = document.querySelector('.scroll-indicator');
     if (scrollIndicator) {
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// Inject Shake keyframes
+// Masukin animasi getar buat form error
 const shakeStyle = document.createElement('style');
 shakeStyle.textContent = `@keyframes shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-6px); } 40% { transform: translateX(6px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(4px); } }`;
 document.head.appendChild(shakeStyle);
